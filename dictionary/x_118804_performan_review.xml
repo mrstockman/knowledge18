@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Review" max_length="40" name="x_118804_performan_review" type="collection">
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="reviewers" max_length="4000" name="reviewers" reference="sys_user" type="glide_list"/>
+        <element label="score" max_length="20" name="score" type="decimal"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>
